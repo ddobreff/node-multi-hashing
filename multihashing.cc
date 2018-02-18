@@ -163,7 +163,9 @@ NAN_METHOD(blake2s) {
     char * input = Buffer::Data(target);
     char *output = (char*) malloc(sizeof(char) * 32);
 
-    blake2s_hash(input, output);
+    uint32_t input_len = Buffer::Length(target);
+
+    blake2s_hash(input, output, input_len);
 
     info.GetReturnValue().Set(Nan::NewBuffer(output, 32).ToLocalChecked());
 }
