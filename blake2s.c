@@ -2,7 +2,7 @@
  * Blake2-S Implementation
  * tpruvot@github 2015-2016
  */
-
+#include "blake2s.h"
 #include <string.h>
 #include <stdint.h>
 
