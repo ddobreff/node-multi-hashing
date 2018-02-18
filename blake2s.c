@@ -1,22 +1,15 @@
-/**
- * Blake2-S Implementation
- * tpruvot@github 2015-2016
- */
 #include "blake2s.h"
-#include <string.h>
+#include <stdlib.h>
 #include <stdint.h>
+#include <string.h>
+#include <stdio.h>
 
-#include <sha3/sph_blake2s.h>
+#include "sha3/sph_blake2s.h"
 
-void blake2s_hash(const char* input, char* output, uint32_t len)
+void blake2s_hash(const char* input, char* output)
 {
-	uint8_t hash[BLAKE2S_OUTBYTES];
-	blake2s_state blake2_ctx;
-
-	blake2s_init(&blake2_ctx, BLAKE2S_OUTBYTES);
-	blake2s_update(&blake2_ctx, input, len);
-	blake2s_final(&blake2_ctx, hash, BLAKE2S_OUTBYTES);
-
-	memcpy(output, hash, 32);
+    blake2s_state ctx_blake2s;
+    blake2s_init(&ctx_blake2s, BLAKE2S_OUTBYTES);
+    blake2s_update(&ctx_blake2s, input, 80);
+    blake2s_final(&ctx_blake2s, output, BLAKE2S_OUTBYTES);
 }
-
