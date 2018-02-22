@@ -95,7 +95,5 @@ void x14_hash(const char* input, char* output, uint32_t len)
     sph_shabal512 (&ctx_shabal1, hashA, 64);
     sph_shabal512_close(&ctx_shabal1, hashB);
 
-
-
     memcpy(output, hashB, 32);
 }

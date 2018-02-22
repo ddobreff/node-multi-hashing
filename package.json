@@ -1,31 +1,65 @@
 {
+  "_from": "git://github.com/webzone/node-multi-hashing-blake2.git",
+  "_id": "multi-hashing@0.0.9",
+  "_inBundle": false,
+  "_integrity": "sha1-Yi880KpmDWYZ5IWIeSFsoFhMLRo=",
+  "_location": "/stratum-pool/multi-hashing",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "multi-hashing@git://github.com/webzone/node-multi-hashing-blake2.git",
     "name": "multi-hashing",
-    "version": "0.0.9",
-    "main": "multihashing",
-    "author": {
-        "name": "Matthew Little"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/foxer666/node-multi-hashing.git"
-    },
-    "dependencies": {
-        "bindings": "^1.3.0",
-        "nan": "^2.6.2"
-    },
-    "keywords": [
-        "scrypt",
-        "scryptjane",
-        "script-n",
-        "x11",
-        "quark",
-        "keccak_hash",
-        "skein",
-        "bcrypt",
-        "keccak",
-        "blake",
-        "shavite",
-        "fugue",
-        "sha1"
-    ]
+    "escapedName": "multi-hashing",
+    "rawSpec": "git://github.com/webzone/node-multi-hashing-blake2.git",
+    "saveSpec": "git://github.com/webzone/node-multi-hashing-blake2.git",
+    "fetchSpec": "git://github.com/webzone/node-multi-hashing-blake2.git",
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "/stratum-pool"
+  ],
+  "_resolved": "git://github.com/webzone/node-multi-hashing-blake2.git#e602493d5cd29920868641d69283fd4623963364",
+  "_spec": "multi-hashing@git://github.com/webzone/node-multi-hashing-blake2.git",
+  "_where": "/media/raid6/coins/Pools/xvg-pool/node_modules/stratum-pool",
+  "author": {
+    "name": "Matthew Little",
+    "email": "zone117x@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/zone117x/node-multi-hashing/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bindings": "^1.3.0",
+    "nan": "^2.6.2"
+  },
+  "deprecated": false,
+  "description": "node-multi-hashing ===============",
+  "gypfile": true,
+  "homepage": "https://github.com/zone117x/node-multi-hashing#readme",
+  "keywords": [
+    "scrypt",
+    "scryptjane",
+    "script-n",
+    "x11",
+    "quark",
+    "keccak_hash",
+    "skein",
+    "bcrypt",
+    "keccak",
+    "blake",
+    "shavite",
+    "fugue",
+    "sha1"
+  ],
+  "main": "multihashing",
+  "name": "multi-hashing",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zone117x/node-multi-hashing.git"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "version": "0.0.9"
 }
